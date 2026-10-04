@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LuminaStock - 4K Web Stock Photo Platform & Poller
 
-## Getting Started
+A full-stack, Pexels-inspired stock photography platform built with **Next.js 16 (App Router)**, **TypeScript**, **TailwindCSS**, and **Supabase**.
 
-First, run the development server:
+## 🌟 Key Features
 
+1. **Dynamic Web Poller**:
+   - Live stream and poll 4K stock photos continuously from open web photo feeds.
+   - Background periodic auto-poller with real-time UI indicator.
+   - On-demand web feed search.
+
+2. **Full-Stack Photography Platform**:
+   - **4K Masonry Grid**: Smooth staggered masonry layout with orientation & color-adaptive placeholders.
+   - **Instant Search & Deep Filtering**: Search by keyword, theme, category, aspect ratio / orientation (Landscape, Portrait, Square), and hex color swatches.
+   - **Photo Modal Lightbox**:
+     - High-resolution pan & zoom inspection.
+     - Full EXIF Camera Specs (Camera model, lens, aperture, focal length, ISO, shutter speed, dimensions).
+     - Color Palette Inspector with 1-click HEX copy.
+     - Live Photo Filter Studio (Vibrant HDR, Moody B&W, Cyber Neon, Golden Hour, Cinematic Teal).
+     - Multi-resolution download (4K RAW, 1080p HD, 720p Web) with celebratory confetti.
+   - **Collections & Moodboards**: Create private/public boards, organize favorite stock photos, and view collection galleries.
+   - **Upload & Web Importer Studio**: Upload local photos or import any direct web image URL into the catalog with custom tags and photographer credits.
+
+3. **Supabase Integration & Architecture**:
+   - Ready-to-use PostgreSQL schema in [`supabase/schema.sql`](file:///c:/PHOTO%20APP/my-app/supabase/schema.sql) for `photos`, `collections`, `likes`, and `downloads`.
+   - Built-in graceful local-first storage fallback so everything works seamlessly both standalone and with live Supabase.
+
+## 🚀 Getting Started
+
+### 1. Development Server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Connect to Supabase (Optional)
+Add your Supabase credentials to `.env.local`:
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
+```
+Then execute the SQL script from [`supabase/schema.sql`](file:///c:/PHOTO%20APP/my-app/supabase/schema.sql) in your Supabase SQL Editor.
