@@ -180,7 +180,7 @@ export default function PhotoDetailPage() {
               <span>Back</span>
             </button>
             <Link href="/" className="text-sm font-bold text-slate-900 dark:text-white hidden sm:block">
-              Lumina<span className="text-cyan-600 dark:text-cyan-400">Stock</span>
+              Wahab<span className="text-pink-600 dark:text-pink-400">Stocks</span>
             </Link>
           </div>
 

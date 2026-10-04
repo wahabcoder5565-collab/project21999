@@ -144,7 +144,7 @@ export default function AdminPage() {
               <ShieldCheck className="w-4 h-4" />
             </div>
             <div>
-              <span className="text-sm font-bold text-slate-900 dark:text-white">Lumina<span className="text-purple-600 dark:text-purple-400">Admin</span></span>
+              <span className="text-sm font-bold text-slate-900 dark:text-white">WahabStocks <span className="text-purple-600 dark:text-purple-400">Admin</span></span>
               <span className="block text-[10px] text-slate-500 dark:text-slate-400 font-mono">v2.4 Console</span>
             </div>
           </div>

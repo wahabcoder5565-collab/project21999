@@ -52,7 +52,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       } else if (tab === 'signup') {
         const res = await signUp(email, password, username, fullName);
         if (res.success) {
-          setMessage('Account created successfully! Welcome to LuminaStock.');
+          setMessage('Account created successfully! Welcome to WahabStocks Limited.');
           setTimeout(() => onClose(), 1000);
         } else {
           setError(res.error || 'Failed to create account');
@@ -85,7 +85,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             </div>
             <div>
               <h3 className="text-base font-bold text-slate-900 dark:text-white">
-                {tab === 'signin' ? 'Sign In to LuminaStock' : tab === 'signup' ? 'Create Free Account' : 'Reset Password'}
+                {tab === 'signin' ? 'Sign In to WahabStocks Limited' : tab === 'signup' ? 'Create Free Account' : 'Reset Password'}
               </h3>
               <p className="text-xs text-slate-500 dark:text-slate-400">Unlock uploads, collections, & creator dashboard</p>
             </div>

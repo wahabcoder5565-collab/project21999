@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LuminaStock - Free 4K Stock Photography & Web Poller Platform",
-  description: "Browse, search, poll live web feeds, and download thousands of high-resolution 4K stock photos for free with camera EXIF details and custom color palettes.",
+  title: "WahabStocks Limited - Free 4K Stock Photography & Web Poller Platform",
+  description: "WahabStocks Limited — Browse, search, poll live web feeds, and download thousands of high-resolution 4K stock photos for free with camera EXIF details and custom color palettes.",
   keywords: ["stock photos", "pexels clone", "4k wallpapers", "free commercial photos", "unsplash alternative", "photography feed", "supabase photo app"],
 };
 

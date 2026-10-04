@@ -186,11 +186,11 @@ export default function DashboardPage() {
           {/* Logo & Theme Toggle */}
           <div className="flex items-center justify-between mb-8">
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-600 to-blue-600 flex items-center justify-center text-white font-bold shadow-md">
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-pink-500 to-pink-700 flex items-center justify-center text-white font-bold shadow-md">
                 <Camera className="w-4 h-4 text-white" />
               </div>
               <span className="text-base font-bold text-slate-900 dark:text-white">
-                Lumina<span className="text-cyan-600 dark:text-cyan-400">Studio</span>
+                Wahab<span className="text-pink-600 dark:text-pink-400">Studio</span>
               </span>
             </Link>
 
